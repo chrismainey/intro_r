@@ -70,18 +70,27 @@ class: center, middle
 
 
 # Agenda
-Using R Studio <br/>
+
+.pull-left[
+## Morning
+What is R & using R Studio <br/>
+<br/> Objects and data types<br/>
 <br/> Importing data <br/>
 <br/> --------- Break --------- <br/>
-<br/> Introduction to ggplot2 <br/>
-<br/> What does this function do? <br/>
-<br/> --------- Lunch ----------- <br/>
 <br/> Data wrangling with dplyr <br/>
-<br/> Naming objects | Relational data <br/>
+<br/> Relational data <br/>
+<br/> Connecting to databases <br/>
+]
+
+.pull-right[
+##Afternoon
+<br/> Introduction to ggplot2 <br/>
+<br/> What's a function, and what does it do? <br/>
 <br/> --------- Break --------- <br/>
 <br/> R Markdown <br/>
 <br/> Ongoing learning <br/>
 <br/> .green[Finish about 4 - 430pm] <br/>
+]
 
 ---
 
