@@ -187,7 +187,7 @@ data("LOS_model")
 LOS_model %>% 
   filter(Organisation == params$trust) %>% 
   ggplot(aes(x=Age))+
-  geom_histogram(fill="dodgerblue2", alpha=0.75, col="black", bins = 12)+
+  geom_histogram(fill="dodgerblue2", alpha=0.6, col="black", bins = 12)+
   labs(title = paste("Age histogram for", params$trust))
   
 ```
