@@ -42,7 +42,6 @@ rm(tb_cases)
 # 'Select count(*) from tb_cases'
 
 
-
 # Now let's declare 'tb_cases', on 'con', as a tibble, so now we can use dplyr.
 # Call it 'cases' to avoid confusion
 # This will now be treated as an R data.frame/tibble, but it is still in the database.
@@ -57,7 +56,6 @@ cases <-
 
 
 # Filter for the year 2001, and find the average number of cases using summarise.
-
 
 
 # Finally, calculate the average cases, per-country over all years.

@@ -2,6 +2,9 @@
 title: "Introduction to RMarkdown"
 date: "`r format(Sys.time(), '%d %B %Y')`"
 output:
+  word_document:
+    toc: yes
+    toc_depth: '4'
   html_document:
     code_download: yes
     toc: yes
@@ -11,12 +14,15 @@ output:
     toc: yes
     toc_depth: '4'
 params:
-  trust: 'Trust1'
+  trust: Trust1
 ---
 
 ```{r setup, include = FALSE}
-knitr::opts_chunk$set(message=FALSE, warning=FALSE, echo=FALSE)
-
+knitr::opts_chunk$set(
+	echo = FALSE,
+	message = FALSE,
+	warning = FALSE
+)
 # Lots of YAML global settings, switches off any messages, warnings and stops sharing and code.
 
 library(tidyverse)
@@ -28,7 +34,7 @@ library(tidyverse)
 
 ## The following section makes more sense in the code than in the html
 
-Insert an R code chunk by using the **insert** button above. Shortcut keys Ctrl+Alt+i should create a chunk but if not, this can be set by choosing your own shortcut in Tools/Keyboard Shortcuts Help.
+Insert an R code chunk by using the **insert** button above. Shortcut keys `Ctrl`+`Alt`+`i` should create a chunk but if not, this can be set by choosing your own shortcut in Tools/Keyboard Shortcuts Help.
 
 A code chunk looks like this:
 
