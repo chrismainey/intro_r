@@ -10,7 +10,7 @@ output:
       - css/nhsr-fonts.css
     lib_dir: libs
     seal: false
-    self-contained: true
+    self_contained: true
     nature:
       highlightStyle: googlecode
       highlightLines: true
@@ -22,33 +22,27 @@ output:
 ---
 
 ```{r libs, include=FALSE}
-
-#Runs packages if available
 library(knitr)
 library(tidyverse)
 library(xaringan)
 library(kableExtra)
-
-# Packages not on CRAN
-
-# install.packages("remotes")
-# remotes::install_github("mitchelloharawild/icons")
-library(icons) # icons need to be loaded to view so run following code if not already done
-# icons::download_fontawesome()
-
-# install.packages("devtools")
-#devtools::install_github("gadenbuie/xaringanExtra")
+library(icons)
 library(xaringanExtra)
+
 xaringanExtra::use_panelset()
 xaringanExtra::use_clipboard()
 xaringanExtra::use_share_again() # need to get the slide button on html view
 
-opts_chunk$set(fig.width = 7.252,
-               fig.height = 4,
-               dpi = 300,
-               dev.args = list(type = "cairo"),
-               echo = TRUE)
-
+opts_chunk$set(
+  echo = TRUE,
+  eval = FALSE,
+  message = FALSE,
+  warning = FALSE,
+  fig.width = 7.252,
+  fig.height = 4,
+  dpi = 300,
+  dev.args = list(type = "cairo")
+)
 ```
 
 class: title-slide, left, bottom
@@ -82,7 +76,8 @@ Either in the script or in the console, typing ? before the function and run if 
 Or if the package hasn't been loaded using the package::function() format:
 
 ```{r eval=FALSE}
-??beepr::beep # loaded in the Cloud
+?beepr::beep # is loaded in the Cloud
+??beep # without the path requires two ?? to be global
 ```
 
 ---
@@ -145,7 +140,7 @@ https://www.data-imaginist.com/art
 
 ---
 
-```{r echo = FALSE, out.width="80%"}
+```{r echo=FALSE, eval=TRUE, out.width="80%"}
 lines <- tibble(
   
   x = seq(0, 19, by = .5),
@@ -183,7 +178,9 @@ ggplot() +
 
 ```
 
-https://ijeamaka-anyene.netlify.app/posts/2021-01-14-art-ggplot-exploring-radial-visualizations/ 
+[YouTube of the R Ladies talk](https://www.youtube.com/watch?v=h0i6KAahLY8) 
+[Source code](https://github.com/Ijeamakaanyene/aRt_ggplot)
+[Slides](https://ijeamakaanyene.github.io/aRt_ggplot/index.html#1)
 
 ---
 #### This work is licensed as
