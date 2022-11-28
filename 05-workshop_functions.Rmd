@@ -98,6 +98,99 @@ Popular packages have cheat sheets and R Studio's can be found [here](https://rv
 
 ---
 
+# What is a function?
+
+Functions considers inputs and outputs, and performs an action on them in between.
+
+_(bad explanation, but stay with me...)_
+
+--
+
+Imagine you want to multiply numbers by 2...:
+
+--
+
+.pull-left[
+#### You have code like this:
+```{r orig2, eval=TRUE, collapse=TRUE}
+old_nums <- c(2,5,12,15,6)
+
+new_nums <- old_nums * 2
+
+new_nums
+```
+]
+
+--
+
+.pull-right[
+#### Turn it into a function:
+```{r asfunc2, eval=TRUE, collapse=TRUE}
+my_function <- function(num){
+  rtn <- num * 2
+  return(rtn)
+}
+
+new_nums <- my_function(old_nums)
+new_nums
+```
+]
+
+
+---
+# Functions
+
+.pull-left[
++ __Function has:__
+ + A name (`my_function`)
+ + An input (`num`)
+ + A return value (by default, returns the last line, but can be explicit with `return()`)
+
+]
+
+.pull-right[
+
+```{r asfunc3, eval=FALSE}
+my_function <- function(num){
+  rtn <- num * 2
+  return(rtn)
+}
+```
+]
+
+
+
+---
+# Functions
+
+.pull-left[
++ __Function has:__
+ + A name (`my_function`)
+ + An input (`num`)
+ + A return value (by default, returns the last line, but can be explicit with `return()`)
+]
+
+.pull-right[
+
+```{r asfunc4, eval=FALSE}
+my_function <- function(num){
+  rtn <- num * 2
+  return(rtn)
+}
+```
+]
+
+<br><br>
+
+It's these functions that we use, and often chain together to build packages.
+We need to:
++ Document them, including help files for users.
++ Tell `R` whether they depend on any other files/packages.
++ Better packages will consider error handling and how best to return values.
+
+
+
+---
 class: center, middle
 
 # Save your script!
