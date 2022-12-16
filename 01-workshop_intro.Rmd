@@ -58,7 +58,6 @@ class: center, middle
 
 
 # Agenda
-<<<<<<< HEAD
 
 .pull-left[
 ## Morning
