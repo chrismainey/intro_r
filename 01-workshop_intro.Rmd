@@ -393,10 +393,10 @@ class: center, middle
 
 [Comprehensive R Archive Network](https://cran.r-project.org/web/packages/)  
 
-18,903 packages (April 2022). Free. Peer reviewed.  
+18,903 packages (December 2023). Free. Peer reviewed.  
 
 
-(Manifold possibilities) eg. interactive graphics and  
+(Manifold possibilities) e.g. interactive graphics and  
 
 dashboards, machine learning, mine twitter data,  
 

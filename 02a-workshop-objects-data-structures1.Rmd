@@ -145,7 +145,7 @@ my_data_frame <-
 
 ___Strictly, data.frames are lists of vectors, that are the same length...___
 
-<p align="center"><img src="https://img.memegenerator.net/instances/74055542.jpg" alt="scene from the movie 'Airplane' where Leslie Nielsen is saying: 'but that's not important right now'"></p>
+<p align="center"><img src="img/sesssion02/notimportant.png" alt="scene from the movie 'Airplane' where Leslie Nielsen is saying: 'but that's not important right now'"></p>
 
 ---
 
