@@ -79,31 +79,8 @@ What is R & using R Studio <br/>
 <br/> Ongoing learning <br/>
 <br/> .green[Finish about 4 - 430pm] <br/>
 ]
-=======
-Using R Studio  
 
-Importing data  
 
---------- Break ---------  
-
-Introduction to ggplot2  
-
-What does this function do?  
-
---------- Lunch -----------  
-
-Data wrangling with dplyr  
-
-Naming objects | Relational data  
-
---------- Break ---------  
-
-R Markdown  
-
-Ongoing learning  
-
-.green[Finish about 4 - 430pm]  
->>>>>>> 80e14d9a03cfdfe3a70ee97d57c8f1df479790b8
 
 ---
 
