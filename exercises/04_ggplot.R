@@ -5,10 +5,11 @@ library(ggplot2)
 
 #Import the capacity_ae dataset which includes information on the differences in
 #staff, cubicles and waits between 2017 and 2018
-capacity_ae <- read_csv("capacity_ae.csv")
+capacity_ae <- read_csv("data/capacity_ae.csv")
 
 #Is a change in the number of cubicles available in A&E associated with 
 #a change in length of attendance?
+
 
 #syntax = ggplot(data, aes(x,y))
 #In ggplot, if we want to use a variable from our data then wrap it in aes()
