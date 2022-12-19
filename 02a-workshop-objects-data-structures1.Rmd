@@ -139,13 +139,15 @@ my_data_frame <-
              , logical_col = logical_vector
              , char_col = character_vector
   )
+
+head(my_data_frame)
 ```
 
 ---
 
 ___Strictly, data.frames are lists of vectors, that are the same length...___
 
-<p align="center"><img src="img/sesssion02/notimportant.png" alt="scene from the movie 'Airplane' where Leslie Nielsen is saying: 'but that's not important right now'"></p>
+<p align="center"><img src="img/session02/notimportant.png" alt="scene from the movie 'Airplane' where Leslie Nielsen is saying: 'but that's not important right now'"></p>
 
 ---
 
