@@ -148,32 +148,6 @@ The dataset we loaded earlier, `capacity_ae`, shows </br>
 
 </br> The object named .green[capacity_ae] is a data frame
 
----
-
-## What is a data frame?
-
-A data frame stores tabular data:
-
-<img class="center" src="img/session04/tidydata_1.JPG" width="90%"/>
-
-.footnote[Artwork by @allison_horst]
-
-
----
-
-## tibble = data frame
-
-In the tidyverse you may see the term "tibble" </br>
-</br> We’ll take "tibble" to be synonymous with "data frame"
-
-</br>
->A tibble... is a modern reimagining of the data.frame...
->
->Tibbles are data.frames that are .blue[**lazy and surly**]: they do less (i.e. they don’t change variable names or types, and don’t do partial matching) and .blue[**complain more**] (e.g. when a variable does not exist). 
->
-> This forces you to confront problems earlier, typically leading to cleaner, more expressive code. 
-
-.footnote[emphasis added to [quote](https://tibble.tidyverse.org/)]
 
 ---
 
@@ -231,6 +205,45 @@ _(and what they mean)_
 <img class="center" src="img/session04/ggplot2_exploratory.PNG" width="50%">
 
 .footnote[John Tukey, quoted in [R for Data Science](https://r4ds.had.co.nz/data-visualisation.html)]
+
+---
+
+# `ggplot2`
+
+Plots are composed of layers, and you can add them together (usinf `+`) to build plots
+
+.pull-left[
+
++ A `ggplot` has:
+
+  + a default dataset and sets of mappings from variables to aesthetics `aes`
+  + one or more layers the draw Geometric objects `geom_`
+
+    
++ They may also use:
+
+  + A separate dataset and set of aesthetic mappings:
+  + A scale for each aesthetic mapping, controlling axes, colours, linetypes etc.
+  + A facet (panel) specification
+  + A theme - styling elements
+]
+
+.pull-right[
+<br>
+```{r ggplotshell, eval = FALSE, include=TRUE}
+ggplot(my_data_frame,
+       aes(y=column_name1, x=column_name2))+
+  geom_point(aes(fill=column_name3)
+             , colour = "black") +
+  scale_y_continuous(limits = c(0, 150))+
+  facet_wrap(~column_name3)+
+  theme(plot.title = element_text(family="Arial"
+                                  , face="bold"
+                                  , size = 18))
+
+```
+]
+
 
 ---
 
@@ -385,18 +398,7 @@ class: center, middle
 ## colour
 ]
 
----
 
-# A statistical graphic
-
-Shape/colour/size `r icons::fontawesome("arrow-right")` geom all default
-
-```{r }
-
-ggplot(data = capacity_ae) + 
-  geom_point(aes(x = dcubicles, y = dwait))#<<
-
-```
 
 ---
 
