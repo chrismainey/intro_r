@@ -1,8 +1,17 @@
 #IMPORTING DATA
 
-#CSV file 
+library(readr)
 
-#More complicated CSV
+#CSV files
+
+# Import the 'capacity_ae.csv' dataset from the data folder 
+
+
+# More complicated CSV: import the 'bed_data.csv' from the data folder.
+# You can use the wizard and copy it out.
+# You'll need to check the date format and where the data start
+
+
 
 #date formats
 # %Y: 4-digit year (1982)
@@ -14,4 +23,12 @@
 # %B: month (January)
 # %b: abbreviated month (Jan)
 
+
+
 #Excel file
+# Now lets read in the 'daily_sitrep.xls' from the data folder.
+# Import the sheet called 'Table 1'.
+
+
+library(readxl)
+

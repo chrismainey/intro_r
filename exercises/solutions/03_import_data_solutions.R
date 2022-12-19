@@ -2,11 +2,16 @@
 
 library(readr)
 
-#CSV file 
-capacity_ae <- read_csv("capacity_ae.csv")
+#CSV files
 
-#More complicated CSV
-beds_data <- read_csv("beds_data.csv", col_types = cols(date = col_date(format = "%d/%m/%Y")), 
+# Import the 'capacity_ae.csv' dataset from the data folder 
+capacity_ae <- read_csv("data/capacity_ae.csv")
+
+# More complicated CSV: import the 'bed_data.csv' from the data folder.
+# You can use the wizard and copy it out.
+# You'll need to check the date format and where the data start
+beds_data <- read_csv("data/beds_data.csv"
+                      , col_types = cols(date = col_date(format = "%d/%m/%Y")), 
                       skip = 3)
 
 #date formats
@@ -19,10 +24,16 @@ beds_data <- read_csv("beds_data.csv", col_types = cols(date = col_date(format =
 # %B: month (January)
 # %b: abbreviated month (Jan)
 
-#Excel file
-library(readxl)
-tb_cases <- read_excel("data/tb_data.xlsx", 
-                      sheet = "tb_cases")
 
-tb_pop <- read_excel("data/tb_data.xlsx", 
-                      sheet = "tb_pop")
+
+#Excel file
+# Now lets read in the 'daily_sitrep.xls' from the data folder.
+# Import the sheet called 'Table 1'.
+
+
+library(readxl)
+
+daily_sitrep <- read_excel("data/daily_sitrep.xlsx", 
+                           sheet = "Table 1"
+                           , col_types = c("date", "numeric")
+                           , skip = 2)
