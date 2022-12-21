@@ -2,6 +2,13 @@
 
 #EXAMPLES
 
+library(readr)
+library(dplyr)
+
+beds_data <- read_csv("data/beds_data.csv", 
+                      col_types = cols(date = col_date(format = "%d/%m/%Y")), 
+                      skip = 3)
+
 #1. arrange the data by org_name (ascending and descending)
 
 #2. filter the data in the following ways
@@ -11,7 +18,7 @@
 
 #2.3 occ_av is less than or equal to 95
 
-#2.4 date is not 1st September 2019
+#2.4 date is not 1st September 2013
 
 #2.5 org_name is one of the following: Isle of Wight, Barths Health and Weston Area Health
 
@@ -28,6 +35,8 @@
 #7. distinct list of dates
 
 #8. slice min and max: highest and lowest average beds
+
+
 
 #EXERCISES
 #1 Which 2 organisations provided the highest number of MH beds in September 2018?

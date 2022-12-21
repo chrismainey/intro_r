@@ -8,6 +8,10 @@ Authors@R: c(
     person(given = "Andrew",
            family = "Jones",
            role = c("aut")),
+    person(given = "Chris",
+           family= "Mainey",
+           role = c("aut"11), 
+           comment = c(ORCID ="0000-0002-3018-6171")
     person(given = "NHS-R Community",
            role = c("cph")))
 Description: Materials for the NHS-R Introduction to R course
@@ -30,7 +34,3 @@ Suggests:
     withr,
     fs,
     here
-Remotes:
-    gadenbuie/xaringanExtra,
-    nhs-r-community/NHSRtheme,
-    mitchelloharawild/icons

@@ -2,6 +2,13 @@
 
 #EXAMPLES
 
+library(readr)
+library(dplyr)
+
+beds_data <- read_csv("data/beds_data.csv", 
+                      col_types = cols(date = col_date(format = "%d/%m/%Y")), 
+                      skip = 3)
+
 #1. arrange the data by org_name (ascending and descending)
 beds_data %>%
   arrange(org_name)
@@ -22,7 +29,7 @@ beds_data %>%
 beds_data %>%
   filter(occ_av <= 95)
 
-#2.4 date is not 1st September 2019
+#2.4 date is not 1st September 2013
 beds_data %>%
   filter(date != "2013-09-01")
 
@@ -62,6 +69,8 @@ beds_data %>%
 
 beds_data %>%
   slice_max(beds_av, n = 1)
+
+
 
 #EXERCISES
 #1 Which 2 organisations provided the highest number of MH beds in September 2018?
