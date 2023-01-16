@@ -1,8 +1,10 @@
 # Joining data
 
+library(tidyverse)
+
 # Import the csvs tb_cases, tb_pop and tb_new_table
-tb_cases <- read_csv("tb_cases.csv")
-tb_pop <- read_csv("tb_pop.csv")
+tb_cases <- read_csv("data/tb_cases.csv")
+tb_pop <- read_csv("data/tb_pop.csv")
 
 #LEFT JOIN
 #Join tb_cases and tb_pop
